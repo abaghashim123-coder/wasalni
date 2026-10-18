@@ -1,1 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+}
+
+header h2 a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+main {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    border: 1px solid #334155;
+}
+
+h3 {
+    color: #38bdf8;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+p, ul {
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+ul {
+    padding-right: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+input:focus, textarea:focus {
+    border-color: #38bdf8;
+    outline: none;
+    background-color: #1e293b;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0369a1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: right;
+    border: 1px solid #334155;
+}
+
+table th {
+    background-color: #0f172a;
+    color: #38bdf8;
+}
+
+table td {
+    color: #cbd5e1;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 20px;
+}
 
