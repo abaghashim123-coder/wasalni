@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق وصلني - تواصل معنا</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>تواصل معنا والطلب - تطبيق وصلني</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h2><a href="index.html" style="text-decoration: none; color: inherit;">تطبيق وصلني 🚗</a></h2>
-        <nav>
-            <a href="map.html">الخريطة</a> | 
-            <a href="about.html">عن الموقع</a> | 
-            <a href="contact.html">تواصل معنا</a> |
-            <a href="index.html">تسجيل خروج</a>
-        </nav>
-    </header>
-
-    <main>
-        <h3>تواصل معنا</h3>
-        <p>يسعدنا تواصلكم معنا على مدار الساعة لخدمتكم والإجابة عن أي استفسارات تخص رحلاتكم.</p>
-
-        <form>
-            <div>
-                <label for="name">الاسم:</label><br>
-                <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكريم">
-            </div>
-            <br>
-            <div>
-                <label for="msg">الرسالة:</label><br>
-                <textarea id="msg" name="msg" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
-            </div>
-            <br>
-            <div>
-                <button type="submit">إرسال الرسالة</button>
-            </div>
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 تطبيق وصلني - جميع الحقوق محفوظة</p>
-    </footer>
+    <div class="form-container">
+        <header>
+            <h2><a href="index.html">وصلني 🚗</a></h2>
+            <nav>
+                <a href="login.html">دخول</a>
+                <a href="about.html">عن الموقع</a>
+                <a href="map.html">الخريطة</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+        </header>
+        
+        <main>
+            <h3>الاستفسارات وحجز الرحلات</h3>
+            <form action="#" method="POST">
+                <div style="margin-bottom: 15px;">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" required placeholder="ادخل اسمك">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="ادخل رقم هاتفك">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="message">تفاصيل الطلب أو الاستفسار:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="اكتب تفاصيل موقعك والوجهة..."></textarea>
+                </div>
+                
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </main>
+        
+        <footer>
+            <p>جميع الحقوق محفوظة لموقع وصلني &copy; 2026</p>
+        </footer>
+    </div>
 </body>
 </html>
-
