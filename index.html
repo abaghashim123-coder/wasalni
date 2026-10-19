@@ -3,47 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عقارات ود مدني - تسجيل الدخول</title>
-<link rel="stylesheet" href="css/style.css">
-
+    <title>وصلني - تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h2><a href="index.html" style="text-decoration: none; color: black;">عقارات ود مدني</a></h2>
-        <nav>
-            <a href="properties.html">تسجيل الدخول</a>
+        <nav class="navbar">
+            <a href="login.html" class="logo">🚖 وصلني</a>
+            <ul class="nav-links">
+                <li><a href="login.html" class="active">تسجيل الدخول</a></li>
+                <li><a href="cars.html">السيارات والأسعار</a></li>
+                <li><a href="map.html">الخريطة واللوكيشن</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
         </nav>
     </header>
-<h2 id="welcome-msg" style="color: #2c3e50; font-size: 20px; text-align: center; margin: 15px 0;"></h2>
 
-    <hr>
+    <div class="container">
+        <div style="max-width: 450px; margin: 3rem auto;" class="card">
+            <h2 class="page-title">تسجيل الدخول</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف أو البريد الإلكتروني</label>
+                    <input type="text" id="phone" placeholder="أدخل رقم الهاتف أو البريد" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                </div>
 
-    <main>
-        <h3>تسجيل الدخول إلى حسابك</h3>
-        <form action="properties.html" method="get">
-            <div>
-                <label for="username">اسم المستخدم:</label><br>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <br>
-            <div>
-                <label for="password">كلمة المرور:</label><br>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <br>
-            <div>
-                <button type="submit" id="login-btn">تسجيل الدخول</button>
-            </div>
-        </form>
-    </main>
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                    <label style="font-weight: normal; cursor: pointer;">
+                        <input type="checkbox"> تذكرني
+                    </label>
+                    <a href="#" style="color: var(--primary-color); font-size: 0.9rem; text-decoration: none;">نسيت كلمة المرور؟</a>
+                </div>
 
-    <hr>
+                <button type="submit" class="btn">دخول</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2026 عقارات ود مدني - جميع الحقوق محفوظة</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 - تطبيق وصلني</p>
     </footer>
-<script src="js/main.js"></script>
 
 </body>
 </html>
