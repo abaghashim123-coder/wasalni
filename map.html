@@ -3,34 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خريطة الموقع - تطبيق وصلني</title>
+    <title>وصلني - تحديد الموقع</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <header>
-            <h2><a href="index.html">وصلني 🚗</a></h2>
-            <nav>
-                <a href="login.html">دخول</a>
-                <a href="about.html">عن الموقع</a>
-                <a href="map.html">الخريطة</a>
-                <a href="contact.html">تواصل معنا</a>
-            </nav>
-        </header>
-        
-        <main>
-            <h3>خريطة التتبع المباشر</h3>
-            <p>حدد موقعك الحالي ووجهتك لطلب الرحلة بدقة:</p>
-            
-            <!-- محاكاة الخريطة -->
-            <div style="background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; height: 300px; display: flex; justify-content: center; align-items: center; margin-top: 15px; text-align: center; color: #38bdf8;">
-                <p>📍 [جارٍ تحميل الخريطة التفاعلية ونظام تحديد Global Positioning System...]</p>
+
+    <header>
+        <nav class="navbar">
+            <a href="login.html" class="logo">🚖 وصلني</a>
+            <ul class="nav-links">
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="cars.html">السيارات والأسعار</a></li>
+                <li><a href="map.html" class="active">الخريطة واللوكيشن</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="page-title">تحديد موقع الانطلاق والوجهة</h2>
+
+        <div class="card">
+            <div class="map-container">
+                <!-- خريطة توضيحية من Google Maps -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.852150381669!2d33.5186!3d14.4012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI0JzA0LjMiTiAzM8KwMzEnMDcuMCJF!5e0!3m2!1sar!2s!4v1600000000000!5m2!1sar!2s" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
             </div>
-        </main>
-        
-        <footer>
-            <p>جميع الحقوق محفوظة لموقع وصلني &copy; 2026</p>
-        </footer>
+
+            <form style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <div class="form-group">
+                    <label>📍 موقع الانطلاق</label>
+                    <input type="text" placeholder="تم تحديد موقعك الحالي..." value="الموقع الحالي" required>
+                </div>
+                <div class="form-group">
+                    <label>🏁 الوجهة</label>
+                    <input type="text" placeholder="إلى أين تريد الذهاب؟" required>
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <button type="submit" class="btn">تأكيد طلب الرحلة 🚕</button>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - تطبيق وصلني</p>
+    </footer>
+
 </body>
 </html>
