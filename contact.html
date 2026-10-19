@@ -3,46 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تواصل معنا والطلب - تطبيق وصلني</title>
+    <title>وصلني - تواصل معنا</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <header>
-            <h2><a href="index.html">وصلني 🚗</a></h2>
-            <nav>
-                <a href="login.html">دخول</a>
-                <a href="about.html">عن الموقع</a>
-                <a href="map.html">الخريطة</a>
-                <a href="contact.html">تواصل معنا</a>
-            </nav>
-        </header>
-        
-        <main>
-            <h3>الاستفسارات وحجز الرحلات</h3>
-            <form action="#" method="POST">
-                <div style="margin-bottom: 15px;">
-                    <label for="name">الاسم الكامل:</label>
-                    <input type="text" id="name" name="name" required placeholder="ادخل اسمك">
+
+    <header>
+        <nav class="navbar">
+            <a href="login.html" class="logo">🚖 وصلني</a>
+            <ul class="nav-links">
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="cars.html">السيارات والأسعار</a></li>
+                <li><a href="map.html">الخريطة واللوكيشن</a></li>
+                <li><a href="contact.html" class="active">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="page-title">تواصل معنا والاستفسارات</h2>
+
+        <div class="contact-wrapper">
+            <!-- نموذج التواصل -->
+            <div class="card">
+                <h3>أرسل لنا استفسارك</h3>
+                <br>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" placeholder="أدخل اسمك" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني / الهاتف</label>
+                        <input type="text" id="email" placeholder="أدخل وسيلة التواصل" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">نوع الاستفسار</label>
+                        <select id="subject">
+                            <option>استفسار عام</option>
+                            <option>شكوى على رحلة</option>
+                            <option>المفقودات</option>
+                            <option>الانضمام كسائق</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" rows="4" placeholder="اكتب استفسارك هنا..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">إرسال الرسالة</button>
+                </form>
+            </div>
+
+            <!-- معلومات التواصل المباشر -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>📞 الدعم الفني المباشر</h4>
+                    <p>متواجدون على مدار 24 ساعة طوال الأسبوع</p>
+                    <strong>9600 / +249 900000000</strong>
                 </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <label for="phone">رقم الهاتف:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="ادخل رقم هاتفك">
+
+                <div class="info-item">
+                    <h4>✉ البريد الإلكتروني</h4>
+                    <p>للمقترحات والشكاوى:</p>
+                    <strong>support@wasalni.com</strong>
                 </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <label for="message">تفاصيل الطلب أو الاستفسار:</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="اكتب تفاصيل موقعك والوجهة..."></textarea>
+
+                <div class="info-item">
+                    <h4>🏢 المقر الرئيسي</h4>
+                    <p>شارع النيل - مركز خدمة العملاء</p>
                 </div>
-                
-                <button type="submit">إرسال الطلب</button>
-            </form>
-        </main>
-        
-        <footer>
-            <p>جميع الحقوق محفوظة لموقع وصلني &copy; 2026</p>
-        </footer>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - تطبيق وصلني</p>
+    </footer>
+
 </body>
 </html>
