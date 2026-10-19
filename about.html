@@ -3,59 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عن الموقع والسيارات - تطبيق وصلني</title>
+    <title>وصلني - أنواع السيارات والأسعار</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <header>
-            <h2><a href="index.html">وصلني 🚗</a></h2>
-            <nav>
-                <a href="login.html">دخول</a>
-                <a href="about.html">عن الموقع</a>
-                <a href="map.html">الخريطة</a>
-                <a href="contact.html">تواصل معنا</a>
-            </nav>
-        </header>
-        
-        <main>
-            <h3>عن تطبيق وصلني والسيارات المتاحة</h3>
-            <p>نحن نقدم خدمة توصيل آمنة وسريعة تلبي جميع احتياجاتك اليومية بأفضل الأسعار وبأحدث السيارات المجهزة.</p>
-            
-            <h3 style="margin-top: 25px;">خيارات السيارات والأسعار</h3>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>نوع السيارة</th>
-                            <th>المواصفات</th>
-                            <th>السعر (للكيلو)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>اقتصادية (Economy)</td>
-                            <td>تتسع لـ 4 ركاب، مكيفة، مريحة للرحلات القصيرة.</td>
-                            <td>$2</td>
-                        </tr>
-                        <tr>
-                            <td>عائلية (SUV)</td>
-                            <td>تتسع لـ 7 ركاب، مساحة واسعة للأمتعة.</td>
-                            <td>$4</td>
-                        </tr>
-                        <tr>
-                            <td>فاخرة (VIP)</td>
-                            <td>سيارات حديثة فاخرة لرجال الأعمال والضيوف.</td>
-                            <td>$7</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+    <header>
+        <nav class="navbar">
+            <a href="login.html" class="logo">🚖 وصلني</a>
+            <ul class="nav-links">
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="cars.html" class="active">السيارات والأسعار</a></li>
+                <li><a href="map.html">الخريطة واللوكيشن</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="page-title">فئات السيارات والتعرفة</h2>
+
+        <div class="cars-grid">
+            <!-- سيارة اقتصادية -->
+            <div class="car-card">
+                <div class="car-img">🚗 صوّرة سيارة اقتصادية</div>
+                <div class="car-details">
+                    <h3>وصلني - اقتصادي</h3>
+                    <p class="car-price">الفتح: 500 د.س | 150 د.س / كم</p>
+                    <ul class="car-specs">
+                        <li>✔ 4 ركاب</li>
+                        <li>✔ تكييف ممتاز</li>
+                        <li>✔ سيارات حديثة واقتصادية</li>
+                    </ul>
+                    <button class="btn">طلب الآن</button>
+                </div>
             </div>
-        </main>
-        
-        <footer>
-            <p>جميع الحقوق محفوظة لموقع وصلني &copy; 2026</p>
-        </footer>
+
+            <!-- سيارة عائلية -->
+            <div class="car-card">
+                <div class="car-img">🚙 صوّرة سيارة عائلية</div>
+                <div class="car-details">
+                    <h3>وصلني - عائلي (XL)</h3>
+                    <p class="car-price">الفتح: 800 د.س | 250 د.س / كم</p>
+                    <ul class="car-specs">
+                        <li>✔ تتسع حتى 6 ركاب</li>
+                        <li>✔ مساحة أمتعة واسعة</li>
+                        <li>✔ رحلات طويلة ومريحة</li>
+                    </ul>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+
+            <!-- سيارة فاخرة -->
+            <div class="car-card">
+                <div class="car-img">🚘 صوّرة سيارة VIP</div>
+                <div class="car-details">
+                    <h3>وصلني - VIP (فاخر)</h3>
+                    <p class="car-price">الفتح: 1500 د.س | 400 د.س / كم</p>
+                    <ul class="car-specs">
+                        <li>✔ سيارات فارهة وحديثة جداً</li>
+                        <li>✔ سائقين متميزين</li>
+                        <li>✔ خدمة ضيافة ومياه مجانية</li>
+                    </ul>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - تطبيق وصلني</p>
+    </footer>
+
 </body>
 </html>
